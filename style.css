@@ -1,0 +1,340 @@
+
+body{
+  font-family: 'DM Serif Display', serif;
+  font-family: 'Oranienbaum', serif;
+
+   background-image: url("https://www.pewresearch.org/internet/wp-content/uploads/sites/9/2021/05/PI_21.04.28_CanceCulture_featured.png");
+  height: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+H1{
+ color: white;
+ font-size: 140px;
+  text-align: center;
+  filter: sepia(100);
+  text-decoration: none;
+}
+
+div.title{
+  animation: glitch .5s linear infinite;
+}
+
+@keyframes glitch{
+  2%,94%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,90%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  92%{
+    transform: translate(0,0) skew(5deg);
+  }
+}
+
+div.title:before,
+div.title:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+div.title:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg);
+  }
+}
+
+div.title:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,94%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg);
+  }
+}
+
+.horror-text6{
+  color: #D11149;
+}
+
+
+
+
+
+.horror-text1 {
+ text-decoration: none;
+color: #6610F2;
+
+}
+
+.horror-text2{
+ position: absolute;
+ transform: rotate(-20deg);
+ width: 100%;
+ top: 90%;
+ color: #E6C229;
+
+}
+
+.horror-text3{
+ position: absolute;
+ transform: rotate(20deg);
+ width: 100%;
+ top: 90%;
+ color: #F17105;
+
+}
+
+.horror-text4{
+ position: absolute;
+ transform: rotate(-20deg);
+ width: 100%;
+ top: 160%;
+color: #D11149;
+}
+
+.horror-text5{
+ position: absolute;
+ transform: rotate(20deg);
+ width: 100%;
+ top: 160%;
+ color: #6610F2;
+}
+
+.about{
+
+  flex-direction: column;
+  background-color: black;
+  justify-content: center;
+/*  margin-left: 120px; */
+
+   color: white;
+   font-size: 25px;
+   width: 100%;
+   length: 100%;
+   padding: 60px;
+
+   display:flex;
+   margin-top: 30px;
+
+}
+
+ .box {
+  display: flex;
+  flex-direction: row;
+  margin-top: 350px;
+  width: 100%;
+
+}
+
+
+.parallax {
+  /* The image used */
+  background-image: url("https://assets.pewresearch.org/interactives/internet/2021/cancel-culture/point.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .text{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 30%;
+background-color: #e57c04;
+margin-top: 30px;
+margin-right: 100px;
+
+
+}
+
+/*
+#gallery {
+   line-height:0;
+   -webkit-column-count:4; /* split it into 5 columns */
+/*   -webkit-column-gap:4px; /* give it a 5px gap between columns */
+/*   -moz-column-count:4;
+   -moz-column-gap:4px;
+/*   column-count:4;
+   column-gap:4px;
+}
+*/
+
+
+.box2{
+
+  background-color: black;
+  width: 50%;
+  border: 3px solid #73AD21;
+
+}
+
+
+.box3{
+
+
+  border: 3px solid #73AD21;
+  background-color: black;
+  width: 50%;
+
+}
+
+.box4{
+  position: relative;
+
+  border: 3px solid #73AD21;
+  background-color: black;
+  width: 30%;
+
+}
+
+
+.box5{
+
+
+  border: 3px solid #73AD21;
+  background-color: black;
+  width: 50%;
+
+}
+
+.box6{
+
+  border: 3px solid #73AD21;
+  background-color: black;
+  width: 30%;
+
+}
+
+.box7{
+
+
+  border: 3px solid #73AD21;
+  background-color: black;
+  width: 30%;
+
+}
+.question{
+
+  text-decoration: none;
+  font-size: 40px;
+  color: yellow;
+
+
+}
+.nav{
+  text-align: left;
+  font-size: 52px;
+  color: yellow;
+  text-decoration: none;
+}
+
+
+.x{
+  animation: glitch .2s linear infinite;
+  width: 40%;
+  float: right;
+}
+
+.item {
+  filter: grayscale();
+
+  max-height: 100%;
+   min-width: 100%;
+   object-fit: cover;
+   vertical-align: bottom;
+}
+
+
+.gallery {
+
+    border: 3px solid ;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 5px;
+    justify-content: flex-end;
+    justify-content: space-between;}
+
+}
+
+.heading{
+
+  background-color: black;
+}
+
+
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  height: 40vh;
+  flex-grow: 1;
+}
+
+
+.gallery{
+
+  background-color: black;
+  border-right:40px solid #73AD21;
+}
+.item {
+  filter:grayscale(200);
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+.nav1{
+  background-color: black;
+  font-size: 90px;
+  float: right;
+
+  color: red;
+  filter: none;
+
+}
+
+@media (max-aspect-ratio: 1/1) {
+  li {
+    height: 90vh;
+  }
+}
